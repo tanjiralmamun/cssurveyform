@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Customer Experience Survey</h1>
+            <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Full Name: </label>
+                <input type="text" id="name" placeholder="Enter your full name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email Address: </label>
+                <input type="email" id="email" placeholder="Enter your email address" class="form-control" required>
+            </div> 
+            <div class="form-group">
+                <label for="number" id="number-label">Age: </label>
+                <input type="number" id="number" placeholder="Age" min="18" max="99" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Select your country</p>
+                <select name="country" id="dropdown" class="form-control">
+                    <option disabled selected value>Select your country</option>
+                    <option value="australia">Australia</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="canada">Canada</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="England">England</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Select you gender</p>
+                <label><input type="radio" name="gender" class="input-radio" value="male" checked> Male</label>
+                <label><input type="radio" name="gender" class="input-radio" value="female"> Female</label>
+                <label><input type="radio" name="gender" class="input-radio" value="other"> Other</label>
+            </div>
+
+            <div class="form-group">
+                <p>Select your language</p>
+                <label><input type="checkbox" name="language" class="input-checkbox" value="englinh"> English</label>
+                <label><input type="checkbox" name="language" class="input-checkbox" value="bangla"> Bangla</label>
+                <label><input type="checkbox" name="language" class="input-checkbox" value="tagalog"> Tagalog</label>
+                <label><input type="checkbox" name="language" class="input-checkbox" value="spanish"> Spanish</label>
+                <label><input type="checkbox" name="language" class="input-checkbox" value="french"> French</label>
+            </div>
+
+            <div class="form-group">
+                <p>Write your experience with us: </p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
